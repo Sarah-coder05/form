@@ -1,0 +1,40 @@
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.single-input {
+    grid-column: span 2;
+}
+.gender-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid rgb(220, 217, 217);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.details{
+    font-weight: 700;
+    color: rgb(15, 15, 70);
+}
+label{
+    color: rgb(152, 144, 144);
+
+}
+.province{
+    width: 90px
+}
+.address{
+    width: 400px;
+}
+
+
+        
