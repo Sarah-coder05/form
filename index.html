@@ -8,38 +8,39 @@
     <form>
         <label class="details">NAME</label>
         <span></span>
-        <input name="fname" placeholder="" type="text" >
-        <input type="text" >
+        <input name="fname" placeholder="" type="text" minlength="5" maxlength="20" required >
+        <input name="lname" type="text" placeholder="" minlength="5" maxlength="20" required>
         <label for="fname">First Name</label>
         <label>Last Name</label>
 
         <label class="details">ADDRESS</label>
         <span></span>
-        <input class="address" type="text" >
-        <input class=province type="text" >
+        <input class="address" type="text" required>
+        <input class=province type="text" required>
         <label>Street Address</label>
         <label>State/Province</label>
 
         <label class="details">EMAIL</label>
-        <input class="email" type="email" >
+        <input class="email" type="email" required>
 
         <label class="details">CELULAR NUMBER</label>
         <label class="details">GENDER</label>
-        <input type="tel">
+        <input type="tel" maxlength="15" required>
         <div class="gender-options">
-            <label><input type="radio" name="gender"> Male</label>
-            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender" required> Female</label>
         </div>
 
         <label class="details">EMERGENCY CONTACT</label>
         <span></span>
-        <input type="text" >
-        <input type="tel" >
+        <input type="text" minlength="5" maxlength="20" required>
+        <input type="tel" maxlength="15" required>
         <label>First Name</label>
         <label>Phone Number</label>
-        <input type="text" >
+        <input type="text" minlength="5" maxlength="20" required>
         <span></span>
         <label>Last Name</label>
+        <button>Submit</button>
     </form>
 </body>
 </html>
